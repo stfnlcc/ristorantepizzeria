@@ -1,36 +1,32 @@
- /* GENERAL */
- .container {
-    display: flex;
-    position: fixed;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-}
 
 
-/* MOVIL */
-@media screen and (max-width: 576px) {
+
+
+@media screen and (min-width: 576px) {
     .container {
-        width: 400px;
-    }
-
-    #menu {
-        width: 290px;
-        height: 220px;
-    }
-}
-
-/* pc */
-
-@media screen and (min-width:577px) {
-    .container {
-        position: fixed;
-        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        width: 100%;
         height: fit-content;
-        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: stretch;
+        left: 0%;
+    }
+
+    .collegamenti {
+        display: flex;
+        width: 4px;
+        justify-content: space-between;
+        height: 0px;
+        font-size: 30px;
+
+    }
+    header {
+        display: flex;
         align-items: center;
+        flex-direction: column;
     }
 }
 

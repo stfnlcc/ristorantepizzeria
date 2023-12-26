@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="form.css">
+
+<body>
+
+    <div class="container">
+        <img class=logo src="img/logo.png">
+        <br>
+        <h3>RESERVAS</h3>
+        <br>
+
+        <div id="personas_box" class="col-sm-6 col-xs-6"><label for="people-box-select">Personas: </label>
+            <select id="people-box-select" class="form-control">
+                <option value="1">1 persona </option>
+                <option value="2">2 personas </option>
+                <option value="3">3 personas </option>
+                <option value="4">4 personas </option>
+                <option value="5">5 personas </option>
+                <option value="6">6 personas </option>
+            </select>
+        </div>
+
+        <div id="hour_box" class="col-sm-6 col-xs-6"><label for="hour-box-select">Hora: </label>
+            <div id="horas">
+                <select id="hour-box-select" class="form-control">
+                    <option value="13:30">13:30</option>
+                    <option value="15:30">15:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="22:00">22:00</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="name"><br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lastname"><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="phone" id="phone" name="phone"><br><br>
+            <br>
+            <div id="last">
+                <label for="datos">Consiento el tratamiento de datos personales.<input type="checkbox" id="datos"
+                        name="datos" required></label><br>
+
+                <label for="com">Consiento la recepción de comunicaciones por e-mail y/o SMS con fines
+                    comerciales<input type="checkbox" id="datos" name="datos" required></label>
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit" onclick="checkForm()" value="enviar">Reservar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
